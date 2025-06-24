@@ -1,15 +1,25 @@
 import styled from "styled-components";
-import { cores } from '../../styles/globalStyles';
+import { cores, breakpoints } from '../../styles/globalStyles';
 
 export const FooterContainer = styled.footer`
     background-color: ${cores.verde};
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
     bottom: 0;
     width: 100%;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        padding: 12px 0;
+        margin-top: 30px;
+    }
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        padding: 10px 0;
+        margin-top: 20px;
+    }
 `;
 
 export const FooterText = styled.p`
@@ -18,6 +28,16 @@ export const FooterText = styled.p`
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.8s ease-out;
+    line-height: 1.5;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 13px;
+    }
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 12px;
+        padding: 0 10px;
+    }
 
     &:nth-child(1) {
         transition-delay: 0.2s;
@@ -40,7 +60,17 @@ export const FooterLink = styled.a`
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        gap: 6px;
+    }
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &:hover {
         color: #222435;
@@ -52,9 +82,17 @@ export const GitHubIcon = styled.span`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     transition: all 0.3s ease;
     color: white;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 18px;
+    }
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 16px;
+    }
 
     ${FooterLink}:hover & {
         transform: scale(1.2);

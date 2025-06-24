@@ -56,8 +56,8 @@ export const Canetas = () => {
     return (
         <Container>
             <Nav />
-            <H1>Nossos Livros de Colorir</H1>
-            <P>Descubra nossa coleção completa de livros de colorir Bobbie Goods</P>
+            <H1>Nossas Canetas Coloridas</H1>
+            <P>Descubra nossa coleção completa de canetas coloridas para colorir</P>
             
             <GridContainer>
                 {Canetas.map((Caneta) => (
