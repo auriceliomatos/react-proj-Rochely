@@ -128,5 +128,32 @@ export const GlobalStyles = createGlobalStyle`
             align-items: center;
         }
     }
+    
+    // Estilos específicos para cards de feiras
+    .feiras-card {
+        background-color: ${cores.celeste} !important;
+        border: 2px solid ${cores.verde} !important;
+        border-radius: 8px !important;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(16, 172, 132, 0.3);
+        }
+    }
+    
+    .feiras-card .card-body {
+        background-color: ${cores.celeste} !important;
+        color: ${cores.branca} !important;
+    }
+    
+    .feiras-card img {
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 `
 

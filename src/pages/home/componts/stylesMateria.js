@@ -8,7 +8,7 @@ text-align: center;
 margin-top: 10px;
 margin-bottom: 10px;
 font-size: 30px;
-font-weight: bold;
+
 
 @media (max-width: ${breakpoints.tablet}) {
     font-size: 24px;

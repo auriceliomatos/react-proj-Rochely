@@ -44,6 +44,8 @@ export const H1 = styled.h1`
     margin-top: 2cqb;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
     @media (max-width: ${breakpoints.tablet}) {
       font-size: 2rem;
@@ -59,7 +61,6 @@ export const H1 = styled.h1`
 export const H3 = styled.h1`
     color: ${cores.verde};
     font-size: 25px;
-    margin-top: 10px;
     text-align: center;
     font-weight: bold;
 
@@ -116,7 +117,7 @@ export const HistoriaContainer = styled.div`
 `
 
 export const HistoriaTexto = styled.div`
-    margin-top: 30px;
+    margin-top: 10px;
     width: 45%;
     margin-left: 5%;
     opacity: 0;

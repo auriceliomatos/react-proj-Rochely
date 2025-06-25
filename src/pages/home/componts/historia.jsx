@@ -41,14 +41,15 @@ export const Historia = () => {
 
   return (
     <Container className="container">
+      <H1> Nossa História</H1>
       <div className="row">
         <div className="col-md-12">
           <HistoriaContainer
             className={`row ${isVisible ? "visible" : ""}`}
             ref={containerRef}
           >
-            <HistoriaTexto className="col-md-6">
-              <H1>História</H1>
+            <HistoriaTexto className="col-6">
+              
               <H3> Papelaria gotinhas de amor </H3>
               <P>
               Olá a todos! Para quem está chegando agora, eu sou a mamãe que deixou o mundo CLT para cuidar da saúde do meu filho e se tornou uma mãe empreendedora. Não é fácil, minha gente! A verdade é que sempre estaremos em uma batalha interna entre nossas diversas versões e escolhas.

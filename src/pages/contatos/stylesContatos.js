@@ -5,6 +5,7 @@ export const Container = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 20px;
     
     @media (max-width: ${breakpoints.tablet}) {
         padding: 15px;
@@ -14,13 +15,11 @@ export const Container = styled.div`
         padding: 10px;
     }
 `
-
 export const H1 = styled.h1`
     color: ${cores.verde};
     text-align: center;
     margin-bottom: 32px;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 30px;
     
     @media (max-width: ${breakpoints.tablet}) {
         font-size: 2rem;
@@ -32,6 +31,41 @@ export const H1 = styled.h1`
         margin-bottom: 20px;
     }
 `
+
+export const H2 = styled.h2`
+    color: ${cores.verde};
+    text-align: center;
+    font-size: 25px;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    
+    @media (max-width: ${breakpoints.mobile}) {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+`
+export const P = styled.p`
+font-size: 20px;
+margin-top: 20px;
+text-align: center;
+color: ${cores.branca};
+
+@media (max-width: ${breakpoints.tablet}) {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+@media (max-width: ${breakpoints.mobile}) {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+}
+`
+
+
 
 export const FormContainer = styled.div`
     display: flex;
@@ -154,28 +188,47 @@ export const Button = styled.button`
     }
 `
 
-export const MapContainer = styled.div`
-    min-width: 320px;
-    max-width: 400px;
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+export const SocialIcon = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
     
-    @media (max-width: ${breakpoints.tablet}) {
-        min-width: auto;
-        max-width: none;
-        height: 250px;
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: ${cores.branca};
+        transition: fill 0.3s ease;
+        
+        &:hover {
+            fill: ${cores.verde};
+        }
     }
     
     @media (max-width: ${breakpoints.mobile}) {
-        height: 200px;
+        gap: 8px;
+        
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+`
+
+export const SocialLink = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: ${cores.branca};
+    transition: color 0.3s ease;
+    
+    &:hover {
+        color: ${cores.verde};
     }
     
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
+    @media (max-width: ${breakpoints.mobile}) {
+        gap: 8px;
     }
 `
