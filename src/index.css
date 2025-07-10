@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+  background-color: #222435;
+  color: #fff;
+}
+
+/* Estilos personalizados para o carrossel */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
