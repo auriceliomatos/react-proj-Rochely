@@ -8,8 +8,8 @@ export const Menu = () => {
 
       <div className=" w-200 flex items-center gap-5">
 
-        <img src={logo} alt="logo1" className="w-10 h-10 mr-2" />
-        <h3 className="text-xl font-bold text-red-50 "> Papelaria gotinhas de amor </h3>
+        <img src={logo} alt="logo1" className="w-10 h-10 mr-2 " />
+        <h3 className="text-xl font-serif font-bold text-red-50 "> Papelaria gotinhas de amor </h3>
 
         
 

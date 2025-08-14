@@ -9,6 +9,7 @@ import { Carrousel2 } from './components/carrousel2';
 import { Noticia01 } from '../contatos/components/not1';
 import { Noticia02 } from '../contatos/components/not2';
 import { Footer } from '../foot/foot';
+import { Borda } from './borda';
 
 export const Home = () => {
   return (
@@ -24,13 +25,26 @@ export const Home = () => {
         <Slider/>
         </div>
 
+        <div className="w-full">
+          <Borda/>
+        </div>
+
         <div className=" w-full  ">
           <Carrousel/>
+        </div>
+
+        <div className="w-full">
+          <Borda/>
         </div>
 
         <div className="w-full"> 
           <Carrousel2/>
         </div>
+
+        <div className="w-full">
+          <Borda/>
+        </div>
+        
         <div className="w-full flex flex-col items-center justify-center">
           <h2 className="text-center text-3xl  text-green-600 h-15"> Nosso catálogo de produtos </h2>
 
