@@ -1,70 +1,73 @@
 // Importing components
-import { Menu } from '../routes/menu';
-import { Footer } from '../foot/foot';
 
-export const Contatos = () => {
+
+export const Contato = () => {
     return (
         <>
-            <div className="w-full min-h-screen flex flex-col items-center justify-center bg-blue-970">
+            <div className="w-full  h-80 flex flex-col items-center justify-center font-serif  ">
                 
-                <div className="w-full">
-                    <Menu />
-                </div>
+               
                 {/* Conteúdo bg-blue-970 */}
 
-                <div className="w-full flex-1 flex flex-col items-center px-4 sm:px-6 md:px-8">
+                <div className="w-full flex-1 flex flex-col items-center px-4 sm:px-6 md:px-8 ">
                     <div className="max-w-6xl w-full">
 
                         {/* Header */}
-                        <div className="w-full flex items-center justify-center text-center h-24 sm:h-32 md:h-40">
-                            <h1 className="text-xl sm:text-2xl md:text-3xl text-green-600 px-4">
+                        <div className="w-full flex items-center justify-center text-center h-20">
+                            <h1 className="text-xl sm:text-2xl md:text-3xl text-white px-4">
                                 ENTRE EM CONTATO
                             </h1>
                         </div>
 
                         {/* Content Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-5 ">
                             
                             {/* Loja Conceito */}
-                            <div className="w-full h-full flex items-center justify-center">
-                    
-                            <div className="bg-blue-970 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 sm:p-6">
-                                <div className="text-center">
-                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4">
-                                        Loja Conceito
+                            <div className="bg-white  rounded-lg shadow-lg sm:p-6 hover:shadow-xl transition-transform duration-300
+                            outline-2 outline-offset-2 outline-green-500
+                            ease-in-out hover:-translate-y-1  hover:shadow-green-500/40 hover:scale-105
+                            ">
+                                <div className="text-center opacity-80 h-40">
+                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-3 sm:mb-4 mt-10">
+                                        Nossa Localização
                                     </h2>
-                                    <div className="space-y-2 sm:space-y-3 text-white">
+                                    <div className="space-y-2 sm:space-y-3 text-green-600 top-10">
                                         <p className="text-xs sm:text-sm leading-relaxed">
-                                            R: Poeta mario linhares, 631 - Conj. j. Walter - Fortaleza/CE
+                                            R:  Aeroporto - conj. jose walter - Fortaleza/CE
                                         </p>
-                                        <p className="text-xs sm:text-sm font-medium">
-                                            Telefone: (85) 99999-9999
+                                        <p className="text-xs sm:text-sm font-medium top-10">
+                                            Telefone: 85 99999-9999
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                            
 
                             {/* Horário de Atendimento */}
-                            <div className="bg-blue-970 rounded-lg shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300">
-                                <div className="text-center">
-                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4">
+                            <div className="bg-white  rounded-lg shadow-lg p-4 sm:p-6 transition-shadow duration-300
+                            outline-2 outline-offset-2 outline-green-500
+                            ease-in-out hover:-translate-y-1 hover:shadow-xl hover:shadow-green-500/40 hover:scale-105
+                            ">
+                                <div className="text-center opacity-80 ">
+                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-3 sm:mb-4">
                                         Horário de Atendimento
                                     </h2>
-                                    <div className="space-y-2 sm:space-y-3 text-white">
-                                        <p className="text-xs sm:text-sm">Segunda a Sexta-feira</p>
-                                        <p className="text-xs sm:text-sm font-medium">Das 08:00 às 18:00</p>
+                                    <div className="space-y-2 sm:space-y-3 text-green-600">
+                                        <p className="text-xs sm:text-sm font-medium">Segunda a Sexta-feira</p>
+                                        <p className="text-xs sm:text-sm font-medium">Das 08:00 às 17:00</p>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Redes Sociais */}
-                            <div className="bg-blue-970 rounded-lg shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
-                                <div className="text-center">
-                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 sm:mb-6">
+                            <div className="bg-white  rounded-lg shadow-lg p-4 sm:p-6  transition-shadow duration-300 md:col-span-2 lg:col-span-1 outline-2 outline-offset-2 outline-green-500
+                            ease-in-out hover:-translate-y-1 hover:shadow-xl hover:shadow-green-500/40 hover:scale-105
+                            ">
+                                <div className="text-center opacity-80">
+                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-4 sm:mb-6">
                                         Redes Sociais
                                     </h2>
-                                    <div className="space-y-3 sm:space-y-4">
+                                    <div className="space-y-3 sm:space-y-4 ">
                                         
                                         {/* Instagram */}
                                         <a 
@@ -73,7 +76,7 @@ export const Contatos = () => {
                                             rel="noopener noreferrer"
                                             className="
                                                 flex items-center justify-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg
-                                                bg-gradient-to-r from-pink-500 to-purple-600 text-white
+                                                bg-gradient-to-r from-pink-500 to-purple-600 text-white e
                                                 hover:from-pink-600 hover:to-purple-700 transition-all duration-300
                                                 transform hover:scale-105 text-xs sm:text-sm
                                             "
@@ -107,9 +110,6 @@ export const Contatos = () => {
                     </div>
                 </div>
 
-                <div className="w-full">
-                    <Footer />
-                </div>
 
             </div>
         </>

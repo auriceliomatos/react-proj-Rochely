@@ -1,6 +1,6 @@
+import React from "react";
 // importação de efeitos
 import { Pagination, Navigation, Autoplay, EffectFlip, EffectFade, EffectCube, EffectCards, EffectCreative, EffectCoverflow} from "swiper/modules";
-
 // importação de swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 // importação das imagens
 import img1 from "../../assets/img2/f1.jpeg";
@@ -31,12 +32,17 @@ export const Slider = () => {
   ];
   
   return (
-    <div className="w-full h-full bg-blue-970  ">
+    <div className="w-full h-full bg-blue-970 px-2 sm:px-4 md:px-6">
+      <div className="w-full flex justify-center h-13">
+        <h1 className="text-white text-3xl font-serif m-5">
+        feiras e Eventos
+        </h1>
+      </div>
       <Swiper
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay, EffectFlip, EffectFade, EffectCube, EffectCards, EffectCreative]}
-        effect="coverflow"
+        effect="fade"
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={10}
         loop={true}
         pagination={{
           clickable: true,
@@ -53,12 +59,12 @@ export const Slider = () => {
         }}
       >
         {imagens.map((imagem) => (
-          <SwiperSlide key={imagem.id} className=" w-full h-full p-2">
+          <SwiperSlide key={imagem.id} className="w-full h-full p-2">
             <div className="relative">
             <img 
               src={imagem.image} 
               alt='slider'
-              className="w-250 h-90  rounded-lg border-2 border-white "
+              className="w-300 h-90 border-2 border-white"
             />
             </div>
           </SwiperSlide>

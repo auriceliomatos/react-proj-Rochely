@@ -5,8 +5,6 @@ import { Contatos } from './contatos/contatos.jsx'
 import { Sistemas } from './sistemas/sistemas.jsx'
 
 export const App = () => {
-  console.log("App component loaded");
-  
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-celeste text-branca font-roboto">

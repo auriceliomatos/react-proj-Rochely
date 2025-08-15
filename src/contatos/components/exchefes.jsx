@@ -71,30 +71,30 @@ export const ExChefes = () => {
     ];
 
     return (
-        <div className="max-w-full">
+        <div className="max-w-full px-4 sm:px-6 md:px-8">
 
-            <div className="w-full h-40 flex flex-col justify-center items-center">
-            <h1 className="text-green-700 text-center font-bold text-3xl">Mural dos Ex-Comandantes</h1> 
-            <p className="text-white  text-xl text-justify">
+            <div className="w-full h-24 sm:h-32 md:h-40 flex flex-col justify-center items-center mb-4 sm:mb-6">
+            <h1 className="text-green-700 text-center font-bold text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-4">Mural dos Ex-Comandantes</h1> 
+            <p className="text-white text-sm sm:text-base md:text-xl text-justify px-2 sm:px-4">
                 Neste espaço digital prestamos uma homenagem especial aos ex-comandantes do Corpo de Bombeiros Militar de Crateús-CE. Homens valentes que dedicaram suas vidas à proteção e ao serviço da comunidade. Este mural é mais do que uma simples homenagem; é um tributo à coragem, à liderança e ao compromisso inabalável que esses homens exemplificaram durante seus mandatos.
             </p>
             </div>
-            <div className="grid xl:grid-cols-5 gap-3 p-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 p-2">
                 {Chefes.map((chefe) => (
                     <div key={chefe.id} className="relative bg-blue-970 border-2 border-green-500 rounded-xl text-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-green-500">
                         {chefe.promocao && (
-                        <span className="absolute bg-red-500 text-white  top-3 right-6 rounded-lg text-sm font-bold">1ºComandante</span>
+                        <span className="absolute bg-red-500 text-white top-2 sm:top-3 right-2 sm:right-6 rounded-lg text-xs sm:text-sm font-bold">1ºComandante</span>
                         )}
-                        <div className="w-full h-92 flex justify-center items-center">
+                        <div className="w-full h-64 sm:h-80 md:h-92 flex justify-center items-center p-2">
                         <img 
                             src={chefe.imagem} 
                             alt={chefe.titulo} 
-                            className=" w-65 h-90 object-cover rounded-lg "
+                            className="w-full h-full object-cover rounded-lg"
                         />
                         </div>
-                        <div className=" h-20 flex flex-col justify-center items-center">
-                        <h3 className="text-green-700 text-2xl  h-6 flex items-center justify-center">{chefe.titulo}</h3>
-                        <p className="text-white text-2xl ">{chefe.preco}</p>
+                        <div className="h-16 sm:h-18 md:h-20 flex flex-col justify-center items-center p-2">
+                        <h3 className="text-green-700 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl h-6 flex items-center justify-center">{chefe.titulo}</h3>
+                        <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl">{chefe.preco}</p>
                         </div>
                     </div>
                 ))}

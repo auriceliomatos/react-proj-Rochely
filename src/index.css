@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
 
 /* Reset CSS básico */
 * {
@@ -15,6 +20,7 @@ body {
   padding-top: 10px;
   background-color: #222435;
   color: #fff;
+  overflow-x: hidden; /* Previne scroll horizontal */
 }
 
 /* Estilos personalizados para o carrossel */
@@ -25,4 +31,26 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
+}
+
+/* Melhorias responsivas */
+@media (max-width: 640px) {
+  body {
+    padding-top: 5px;
+  }
+}
+
+/* Melhoria para touch em dispositivos móveis */
+@media (hover: none) and (pointer: coarse) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Previne zoom em inputs em iOS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input, textarea, select {
+    font-size: 16px;
+  }
 }
