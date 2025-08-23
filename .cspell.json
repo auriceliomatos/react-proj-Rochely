@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en,pt",
+  "words": [
+    "importação",
+    "efeitos",
+    "estilos",
+    "imagens",
+    "imagem",
+    "Incêndio",
+    "florestal",
+    "monturo",
+    "Participação",
+    "feiras",
+    "Coverflow",
+    "coverflow",
+    "Papelaria",
+    "gotinhas",
+    "contatos",
+    "sistemas"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "*.min.js",
+    "package-lock.json"
+  ]
+}

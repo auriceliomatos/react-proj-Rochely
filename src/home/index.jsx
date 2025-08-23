@@ -11,6 +11,7 @@ import { Carrousel } from './components/carrousel';
 //import { Carrousel2 } from './components/carrousel2';
 //import { Sliderr } from './components/sliderr';
 import { Sliderr2 } from './components/sliderr2';
+import { Banner } from './components/banner';
 
 export const Home = () => {
   return (
@@ -28,6 +29,14 @@ export const Home = () => {
 
         <div className="w-full"> 
         <Borda/>
+        </div>
+
+        <div className="w-full"> 
+        <Banner />
+        </div>
+
+        <div className="w-full"> 
+        <Borda />
         </div>
 
         <div className="w-full"> 
