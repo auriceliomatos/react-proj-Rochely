@@ -14,15 +14,11 @@ import "swiper/css/pagination";
 
 
 // importação das imagens
-const img1 = "https://www.bombeiros.ce.gov.br/wp-content/uploads/sites/27/2025/06/CONABOM.pdf-900-x-600-px-1200x800.png";
-const img2 = "https://www.bombeiros.ce.gov.br/wp-content/uploads/sites/27/2025/05/RODAPE-SITE-110-ANOS-1200x400.png";
-const img3 = "https://www.bombeiros.ce.gov.br/wp-content/uploads/sites/27/2024/11/08EDB1BF-676B-4554-9588-28E22EE38A4F.jpeg";
-const img4 = "https://conabom2025.com.br/wp-content/uploads/2025/03/bb8f80e7349d2ff9db3ebf323d897b75.png";
-const img5 = "https://i.im.ge/2025/08/16/JWqm2W.q8.jpeg";
-
-
-
-
+const img1 = " https://imgs.casasbahia.com.br/1572259523/1xg.jpg?imwidth=500 ";
+const img2 = " https://imgs.casasbahia.com.br/1572259523/2xg.jpg?imwidth=500 ";
+const img3 = " https://imgs.casasbahia.com.br/1571890439/3xg.jpg?imwidth=500";
+const img4 = " https://imgs.casasbahia.com.br/1572259523/4xg.jpg?imwidth=500 ";
+const img5 = " https://imgs.casasbahia.com.br/1572259523/3xg.jpg?imwidth=500 ";
 
 export const Banner = () => {
   const imagens = [
@@ -56,15 +52,15 @@ export const Banner = () => {
   
   return (
 
-    <div className="w-full h-full  flex-col items-center justify-center bg-gray-900 " >
+    <div className="w-full h-130  flex-col items-center justify-center bg-gray-900 " >
 
-      <div className="w-full flex justify-center">
-        <h1 className="text-white text-3xl font-serif m-5">
+      <div className="w-full flex justify-center ">
+        <h1 className="text-fuchsia-700 text-4xl font-serif m-5">
         Participação de feiras
         </h1>
       </div>
 
-    <div className="w-full h-full flex items-center justify-center pb-5 mt-2">
+    <div className="w-full h-98 flex items-center justify-center pb-2 mt-2">
 
       <Swiper
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay, EffectFlip, EffectFade, EffectCube, EffectCards, EffectCreative]}
@@ -92,7 +88,7 @@ export const Banner = () => {
               <img 
                 src={imagem.image} 
                 alt='slider'
-                className="w-250 h-80  rounded-lg border-2 border-white"
+                className="w-250 h-100 rounded-lg border-2 border-white"
               />
               
             </div>
@@ -101,7 +97,6 @@ export const Banner = () => {
       </Swiper>
     
     </div>
-   
     </div>
 
   );

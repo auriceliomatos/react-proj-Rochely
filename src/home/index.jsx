@@ -55,10 +55,6 @@ export const Home = () => {
         <Borda/>
         </div>
 
-        <div className="w-full"> 
-        <Borda/>
-        </div>
-
         <div className="w-full h-100"> 
         <Contatos />
         </div>

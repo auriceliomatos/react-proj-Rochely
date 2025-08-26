@@ -179,13 +179,14 @@ export const Carrousel = ({ produtos = [], titulo = "NOVIDADES" }) => {
   }
 
   return (
-    <div className="w-full h-full m-2 mb-4">
+    <div className="w-full h-130 m-2 mb-4 ">
+
       <div className="flex flex-col justify-center h-20 mb-4">
         <h1 className="text-center text-4xl text-fuchsia-700">{titulo}</h1>
       </div>
 
       <div
-        className="relative flex items-center"
+        className="relative flex items-center "
         onMouseEnter={stopAutoPlay}
         onMouseLeave={startAutoPlay}
       >

@@ -183,13 +183,14 @@ export const Sliderr2 = ({ produtos = [], titulo = "PROMOÇÕES" }) => {
   }
 
   return (
-    <div className="w-full h-full m-2 mb-4">
-      <div className="flex flex-col justify-center h-20 mb-4">
+    <div className="w-full m-4 h-135 ">
+
+      <div className="flex flex-col justify-center h-20 mb-2 ">
         <h1 className="text-center text-4xl text-fuchsia-700">{titulo}</h1>
       </div>
 
       <div
-        className="relative flex items-center"
+        className="relative flex items-center top-2 "
         onMouseEnter={stopAutoPlay}
         onMouseLeave={startAutoPlay}
       >
