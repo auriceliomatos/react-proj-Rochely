@@ -5,7 +5,7 @@
 import { Menu} from '../menu/menu';
 import { Footer } from '../foot/foot';
 import { Contatos } from './contato/contato';
-import { Papel } from './papel/papel';
+
 import { Borda } from './borda/borda';
 import { Carrousel } from './components/carrousel';
 //import { Carrousel2 } from './components/carrousel2';
@@ -23,13 +23,6 @@ export const Home = () => {
         <Menu />
         </div>
 
-        <div className="w-full"> 
-        <Papel />
-        </div>
-
-        <div className="w-full"> 
-        <Borda/>
-        </div>
 
         <div className="w-full"> 
         <Banner />

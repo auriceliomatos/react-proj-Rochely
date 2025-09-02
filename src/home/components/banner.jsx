@@ -9,16 +9,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-// importação do Link do React Router
-
-
 // importação das imagens
-const img1 = " https://imgs.casasbahia.com.br/1572259523/1xg.jpg?imwidth=500 ";
-const img2 = " https://imgs.casasbahia.com.br/1572259523/2xg.jpg?imwidth=500 ";
-const img3 = " https://imgs.casasbahia.com.br/1571890439/3xg.jpg?imwidth=500";
-const img4 = " https://imgs.casasbahia.com.br/1572259523/4xg.jpg?imwidth=500 ";
-const img5 = " https://imgs.casasbahia.com.br/1572259523/3xg.jpg?imwidth=500 ";
+const img1 = " https://i.im.ge/2025/08/28/no6azM.imagens2.png"
+const img2 = " https://i.im.ge/2025/08/28/no6sth.imagens1.png"
+const img3 = " https://i.im.ge/2025/08/28/no6qq8.imagens3.png"
 
 export const Banner = () => {
   const imagens = [
@@ -36,34 +30,16 @@ export const Banner = () => {
       id: 3,
       image: img3,
       title: "Incêndio monturo",
-    },
-    {
-      id: 4,
-      image: img4,
-      title: "Incêndio florestal",
-    },
-    {
-      id: 5,
-      image: img5,
-      title: "Incêndio florestal",
-    },
-    
+    }
   ];
   
   return (
 
-    <div className="w-full h-130  flex-col items-center justify-center bg-gray-900 " >
-
-      <div className="w-full flex justify-center ">
-        <h1 className="text-fuchsia-700 text-4xl font-serif m-5">
-        Participação de feiras
-        </h1>
-      </div>
-
-    <div className="w-full h-98 flex items-center justify-center pb-2 mt-2">
+    <div className="w-full flex-col items-center justify-center bg-gray-900 " >
+    <div className="w-full flex items-center justify-center">
 
       <Swiper
-        modules={[EffectCoverflow, Pagination, Navigation, Autoplay, EffectFlip, EffectFade, EffectCube, EffectCards, EffectCreative]}
+        modules={[Pagination, Navigation, Autoplay, EffectFlip, EffectFade, EffectCube, EffectCards, EffectCreative, EffectCoverflow]}
         effect="coverflow"
         slidesPerView={1}
         spaceBetween={30}
@@ -74,21 +50,21 @@ export const Banner = () => {
         navigation={true}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
-        className="w-250 h-full  "
+        className="w-full h-full  "
         style={{
-          '--swiper-navigation-color': '#d50fb1',
-          '--swiper-pagination-color': '#d50fc8'
+          '--swiper-navigation-color': '#167ce9',
+          '--swiper-pagination-color': '#168cdf'
         }}
       >
         {imagens.map((imagem) => (
-          <SwiperSlide key={imagem.id} className=" w-full h-full p-2">
+          <SwiperSlide key={imagem.id} className=" w-full h-full">
             <div className="relative">
               <img 
                 src={imagem.image} 
                 alt='slider'
-                className="w-250 h-100 rounded-lg border-2 border-white"
+                className="w-full h-90"
               />
               
             </div>
